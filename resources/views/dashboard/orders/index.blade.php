@@ -33,7 +33,7 @@
                                 <div class="row">
 
                                     <div class="col-md-8">
-                                        <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}">
+                                        <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}" style="margin-bottom: 10px">
                                     </div>
 
                                     <div class="col-md-4">

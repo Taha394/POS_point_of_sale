@@ -27,11 +27,11 @@
                         <div class="row">
 
                             <div class="col-md-4">
-                                <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}">
+                                <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}" style="margin-bottom: 10px">
                             </div>
 
                             <div class="col-md-4">
-                                <select name="category_id" class="form-control">
+                                <select name="category_id" class="form-control" style="margin-bottom: 10px">
                                     <option value="">@lang('site.all_categories')</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}" {{ request()->category_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
@@ -54,7 +54,7 @@
                 </div><!-- end of box header -->
 
                 <div class="box-body">
-
+                    <div class="table-responsive">
                     @if ($products->count() > 0)
 
                         <table class="table table-hover">
@@ -62,15 +62,15 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>@lang('site.name')</th>
-                                <th>@lang('site.description')</th>
-                                <th>@lang('site.category')</th>
-                                <th>@lang('site.image')</th>
-                                <th>@lang('site.purchase_price')</th>
-                                <th>@lang('site.sale_price')</th>
-                                <th>@lang('site.profit_percent') %</th>
-                                <th>@lang('site.stock')</th>
-                                <th>@lang('site.action')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.name')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.description')</th>
+                                <th class="wd-20p border-bottom-0">@lang('site.category')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.image')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.purchase_price')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.sale_price')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.profit_percent') %</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.stock')</th>
+                                <th class="wd-15p border-bottom-0">@lang('site.action')</th>
                             </tr>
                             </thead>
                             
@@ -116,7 +116,7 @@
                         <h2>@lang('site.no_data_found')</h2>
                         
                     @endif
-
+                    </div>
                 </div><!-- end of box body -->
 
 

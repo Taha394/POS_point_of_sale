@@ -27,7 +27,7 @@
                         <div class="row">
 
                             <div class="col-md-4">
-                                <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}">
+                                <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}" style="margin-bottom: 10px">
                             </div>
 
                             <div class="col-md-4">
@@ -44,20 +44,20 @@
 
                 </div><!-- end of box header -->
 
-                <div class="box-body">
-
+            <div class="box-body">
+                <div class="table-responsive">
                     @if ($clients->count() > 0)
 
-                        <table class="table table-hover">
+                        <table class="table text-md-nowrap">
 
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>@lang('site.name')</th>
-                                <th>@lang('site.phone')</th>
-                                <th>@lang('site.address')</th>
-                                <th>@lang('site.add_order')</th>
-                                <th>@lang('site.action')</th>
+                                <th class="wd-15p border-bottom-0" style="text-align: center">@lang('site.name')</th>
+                                <th class="wd-15p border-bottom-0" style="text-align: center">@lang('site.phone')</th>
+                                <th class="wd-10p border-bottom-0" style="text-align: center">@lang('site.address')</th>
+                                <th class="wd-15p border-bottom-0" style="text-align: center">@lang('site.add_order')</th>
+                                <th class="wd-15p border-bottom-0" style="text-align: center">@lang('site.action')</th>
                             </tr>
                             </thead>
                             
@@ -105,9 +105,8 @@
                         <h2>@lang('site.no_data_found')</h2>
                         
                     @endif
-
-                </div><!-- end of box body -->
-
+                </div>    
+            </div><!-- end of box body -->
 
             </div><!-- end of box -->
 

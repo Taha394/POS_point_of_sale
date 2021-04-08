@@ -27,11 +27,11 @@
                         <div class="row">
 
                             <div class="col-md-4">
-                                <input type="text" name="search" class="form-control" placeholder="@lang('site.search')" value="{{ request()->search }}">
+                                <input type="text" name="search" class="form-control form-control-sm" placeholder="@lang('site.search')" value="{{ request()->search }}" style="margin-bottom: 10px">
                             </div>
 
                             <div class="col-md-4">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> @lang('site.search')</button>
+                                <button  type="submit" class="btn btn-primary"><i class="fa fa-search"></i> @lang('site.search')</button>
                                 @if (auth()->user()->hasPermission('create_users'))
                                     <a href="{{ route('dashboard.users.create') }}" class="btn btn-primary"><i class="fa fa-plus"></i> @lang('site.add')</a>
                                 @else
@@ -44,19 +44,19 @@
 
                 </div><!-- end of box header -->
 
-                <div class="box-body">
-
+            <div class="box-body">
+                <div class="table-responsive">
                     @if ($users->count() > 0)
 
-                        <table class="table table-hover">
+                        <table class="table text-md-nowrap">
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>@lang('site.first_name')</th>
-                                <th>@lang('site.last_name')</th>
-                                <th>@lang('site.email')</th>
-                                <th>@lang('site.image')</th>
-                                <th>@lang('site.action')</th>
+                                <th class="wd-15p border-bottom-0" >@lang('site.first_name')</th>
+                                <th class="wd-15p border-bottom-0" >@lang('site.last_name')</th>
+                                <th class="wd-20p border-bottom-0" >@lang('site.email')</th>
+                                <th class="wd-15p border-bottom-0" >@lang('site.image')</th>
+                                <th class="wd-10p border-bottom-0" >@lang('site.action')</th>
                             </tr>
                             </thead>
 
@@ -98,8 +98,8 @@
                         <h2>@lang('site.no_data_found')</h2>
 
                     @endif
-
-                </div><!-- end of box body -->
+                </div> <!--end of the table responsive-->
+            </div><!-- end of box body -->
 
 
             </div><!-- end of box -->

@@ -85,7 +85,7 @@
                     <h3 class="box-title">Sales Graph</h3>
                 </div>
                 <div class="box-body border-radius-none">
-                    <div class="chart" id="line-chart" style="height: 250px;"></div>
+                    <div class="chart" id="line-chart" style="height: 300px;"></div>
                 </div>
                 <!-- /.box-body -->
             </div>
@@ -96,7 +96,16 @@
 
 
 @endsection
-
+@section('js')
+    <!--Internal  Datepicker js -->
+    <script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
+    <!--Internal  Chart.bundle js -->
+    <script src="{{URL::asset('assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
+    <!-- Internal Select2 js-->
+    <script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
+    <!--Internal Chartjs js -->
+    <script src="{{URL::asset('assets/js/chart.chartjs.js')}}"></script>
+@endsection
 @push('scripts')
 
     <script>
