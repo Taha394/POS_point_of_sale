@@ -1,4 +1,5 @@
 @extends('layouts.dashboard.app')
+<title>الطلبات</title>
 
 @section('content')
 

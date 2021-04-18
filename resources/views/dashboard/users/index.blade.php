@@ -1,5 +1,5 @@
 @extends('layouts.dashboard.app')
-
+<title>المشرفين</title>
 @section('content')
 
     <div class="content-wrapper">

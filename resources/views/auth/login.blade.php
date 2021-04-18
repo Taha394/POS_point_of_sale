@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Admin</title>
+    <title>تسجيل الدخول</title>
 
     {{--<!-- Bootstrap 3.3.7 -->--}}
     <link rel="stylesheet" href="{{ asset('dashboard_files/css/bootstrap.min.css') }}">

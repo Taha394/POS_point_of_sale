@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Project</title>
+    <title>الصفحه الرئسيه</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     {{--<!-- Bootstrap 3.3.7 -->--}}
@@ -91,7 +91,7 @@
         {{--<!-- Logo -->--}}
         <a href="{{ asset('dashboard') }}/index2.html" class="logo">
             {{--<!-- mini logo for sidebar mini 50x50 pixels -->--}}
-            <span class="logo-lg"><b>Taha</b> Salah</span>
+            <span class="logo-lg"><b>Tega</b>rty</span>
         </a>
 
         <nav class="navbar navbar-static-top">
@@ -232,7 +232,7 @@
             <b>Version</b> 2.4.0
         </div>
         <strong>Copyright &copy; 2020-2021
-            <a href="https://adminlte.io">Taha Salah</a>.</strong> All rights
+            <a href="https://tahasalah3.netlify.app">Taha Salah</a>.</strong> All rights
         reserved.
     </footer>
 
